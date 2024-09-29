@@ -1,0 +1,24 @@
+.box{
+	width:250px;
+	height:250px;
+	background:green;
+	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	animation-name:star;
+	animation-iteration-count:infinite;
+	animation-duration:2s;
+	animation-timing-function:linear;
+}
+@keyframes star{
+
+	0%{
+		transform:rotate(0deg);
+	}
+	25%{
+		background:orange;
+	}
+100%{
+		transform:rotate(360deg);
+		background:url('01.jpg');
+		
+	}
+}
